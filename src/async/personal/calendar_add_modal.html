@@ -1,0 +1,157 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<h6 class="modal-title text-semibold">新建日程/编辑日程</h6>
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+		</div>
+		<div class="modal-body">
+			<form id="calendarAddForm" class="form-horizontal">
+				<div class="form-group">
+					<div class="input-group" style="margin-left:5px; margin-right:5px;">
+						<span class="input-group-addon bg-info"><i class="icon-calendar2"></i></span>
+						<input id="calTitle" type="text" class="form-control text-default text-semibold input-lg" placeholder="请输入日程安排标题，点击右侧按钮可添加详细描述..." name="title" value="">
+						<span class="input-group-btn">
+							<button type="button" class="btn btn-lg btn-default btn-icon" data-toggle="collapse" data-target="#description">
+								<span class="caret"></span>
+							</button>
+						</span>
+					</div>
+					<div class="collapse" id="description" style="margin-top:10px; margin-left:5px; margin-right:5px;">
+						<div class="form-group">
+							<textarea id="calDetail" rows="3" class="form-control" placeholder="添加日程安排的详细描述..." name="detail" value=""></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-12">
+						<div class="row">
+							<label class="col-md-2 control-label text-right">起始时间：</label>
+							<div class="col-md-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="icon-calendar22"></i></span>
+									<input id="calStart" type="text" class="form-control daterange-single" name="start" value="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-12">
+						<div class="row">
+							<label class="col-md-2 control-label text-right">结束时间：</label>
+							<div class="col-md-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="icon-calendar22"></i></span>
+									<input id="calEnd" type="text" class="form-control daterange-single" name="end" value="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-12">
+						<div class="row">
+							<label class="col-md-2 control-label text-right">全天事件：</label>
+							<div class="col-md-10">
+								<div class="checkbox checkbox-switchery">
+									<label>
+										<input id="calWholeDay" type="checkbox" class="switchery-primary-1 all-day" name="isWholeDay">
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-12">
+						<div class="row">
+							<label class="col-md-2 control-label text-right">参与人： </label>
+							<div class="col-md-10">
+								<select id="calJoinPersons" data-placeholder="请选择任务参与人..." class="select-search" name="joinPersons" style="width: 100%">
+									<optgroup label="行政部">
+										<option value="张霞">张霞</option>
+										<option value="郭明">郭明</option>
+										<option value="刘明杰">刘明杰</option>
+										<option value="孙茜">孙茜</option>
+									</optgroup>
+									<optgroup label="市场部">
+										<option value="马仙林">马仙林</option>
+										<option value="陈明">陈明</option>
+										<option value="宋晓明">宋晓明</option>
+										<option value="张彩明">张彩明</option>
+									</optgroup>
+									<optgroup label="开发部">
+										<option value="刘准同">刘准同</option>
+										<option value="赵红杰">赵红杰</option>
+										<option value="葛明婷">葛明婷</option>
+										<option value="王红艳">王红艳</option>
+									</optgroup>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-12">
+						<div class="row">
+							<label class="col-md-2 control-label text-right">地点： </label>
+							<div class="col-md-10">
+								<input id="calAddress" type="text" class="form-control" placeholder="" name="address" value="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-12">
+						<div class="row">
+							<label class="col-md-2 control-label text-right">公开程度： </label>
+							<div class="col-md-10">
+								<select id="calOpenLevel"
+								class="select" name="openLevel" style="width: 100%">
+									<option value="对所有人公开">对所有人公开</option>
+									<option value="仅自己可见">仅自己可见</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-12">
+						<div class="row">
+							<label class="col-md-2 control-label text-right">颜色： </label>
+							<div class="col-md-10">
+								<label class="radio-inline">
+									<input type="radio" name="color" class="control-danger" value="#E53935">
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="color" class="control-warning" value="#F4511E">
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="color" class="control-primary" value="#1E88E5">
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="color" class="control-info" value="#00ACC1">
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="color" class="control-success" value="#43A047">
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="color" class="control-custom" value="#3949AB">
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="color" class="styled" value="#607D8B">
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="modal-footer">
+			<button id="calendarAddSave" type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+			<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+		</div>
+	</div>
+</div>
+
+				

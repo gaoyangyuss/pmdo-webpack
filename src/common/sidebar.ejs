@@ -1,0 +1,127 @@
+<!-- Main sidebar -->
+<div class="sidebar sidebar-main sidebar-fixed">
+	<div class="sidebar-content">
+		<!-- Domain info menu -->
+		<div class="sidebar-user">
+			<div class="category-content">
+				<div class="media">
+					<a href="#" class="media-left"><img src="<%= require('../assets/images/pro_image.png') %>" class="img-circle img-sm" alt=""></a>
+					<div class="media-body media-middle">
+						<!-- 域名称位置，需要限制中文不超过8个，英文字符不超过16个 -->
+						<span class="media-heading text-semibold domain-name-span">深圳普华春天科技</span>
+						<div class="text-size-mini text-muted">
+							<i class="icon-cloud-check2 text-success"></i> &nbsp;专业版&nbsp;&nbsp;
+							<!-- <span class="media-annotation dotted">已认证</span> -->
+						</div>
+					</div>
+					<div class="media-right media-middle">
+						<ul class="icons-list">
+							<li>
+								<a href="#" title="" data-placement="bottom" data-toggle="dropdown" aria-expanded="true" data-container="body" data-original-title="PM.DO 域管理">
+									<i class="icon-cog3"><span class="caret"></i></span>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-right domain—dropdown active ">
+									<li class="active"><a href="../domain_choose/domain_choose.html"><i class="icon-infinite"></i> 深圳普华春天科技</a></li>
+									<li><a href="#"></i> 用户的第二个域</a></li>
+									<li><a href="#"><i class="icon-infinite"></i> One more domain</a></li>
+									<li class="divider"></li>
+									<li><a href="#"><i class="icon-infinite-square"></i> PM.DO 域管理</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /domain info menu -->
+
+		<!-- Main function navigation -->
+		<div class="sidebar-category sidebar-category-visible toggle-active">
+			<div class="category-content no-padding">
+				<ul class="navigation navigation-main navigation-accordion">
+					<!-- Main -->
+					<li class="navigation-header"><span>功能菜单</span> <i class="icon-menu" title="Main pages"></i></li>
+					<li class="active"><a href="workbench.html"><i class="icon-home4"></i> <span>工作台</span></a></li>
+					<li>
+						<a href="#"><i class="icon-user"></i> <span>个人中心</span></a>
+						<ul>
+							<li><a href="calendar.html"><i class="icon-calendar2"></i> <span>日程表</span></a></li>
+							<li><a href="../personal/task.html"><i class="icon-clipboard5"></i> <span>计划任务</span></a></li>
+							<li><a href="../personal/workflows.html"><i class="icon-stack3"></i> <span>业务待办</span></a></li>
+							<li><a href="../personal/messages.html"><i class="icon-envelop5"></i> <span>消息通知</span></a></li>
+							<li><a href="../personal/worknotes.html"><i class="icon-notebook"></i> <span>工作笔记</span></a></li>
+							<li><a href="../personal/scrumboard.html"><i class="icon-windows2"></i> <span>我的看板</span></a></li>
+							<!-- <li><a href="../domain_choose/domain_choose.html"><i class="icon-windows2"></i> <span>我的域</span></a></li> -->
+						</ul>
+					</li>
+					<li><a href="../project/proj_center.html"><i class="icon-grid6"></i> <span>项目管理</span></a></li>
+
+					<li><a href="../operation/team_center.html"><i class="icon-puzzle"></i> <span>专业团队</span></a></li>
+					
+					<li><a href="#"><i class="icon-stats-bars3"></i> <span>CRM</span></a>
+						<ul>
+							<li><a href="../crm/client.html"><i class="icon-office"></i> <span>客户</span></a></li>
+							<li><a href="../crm/contacts.html"><i class="icon-address-book"></i> <span>联系人</span></a></li>
+							<li><a href="../crm/opportunity.html"><i class="icon-cash3"></i> <span>商机</span></a></li>
+							<li><a href="../crm/contracts.html"><i class="icon-drawer3"></i> <span>合同</span></a></li>
+							<li><a href="../crm/services.html"><i class="icon-phone"></i> <span>客户服务</span></a></li>
+						</ul>
+					</li>
+					<li><a href="#"><i class="icon-calculator"></i> <span>成本管理</span></a>
+						<ul>
+							<li><a href="../cost/budgets.html"><i class="icon-coins"></i> <span>预算管理</span></a></li>
+							<li><a href="../cost/cost_monitor.html"><i class="icon-equalizer"></i> <span>成本控制</span></a></li>
+							<!-- 把PD的收支明细和成本控制的功能整合在一起 -->
+						</ul>
+					</li>
+					<li><a href="#"><i class="icon-trophy2"></i> <span>质量管理</span></a>
+						<ul>
+							<li><a href="../quality/qc_inspects.html"><i class="icon-search4"></i> <span>质量检查</span></a></li>
+							<li><a href="../quality/qc_adjusts.html"><i class="icon-file-eye2"></i> <span>整改跟踪</span></a></li>
+						</ul>
+					</li>
+					<li><a href="#"><i class="icon-power2"></i> <span>风险管理</span></a>
+						<ul>
+							<li><a href="../risk/risk_repository.html"><i class="icon-cabinet"></i> <span>企业风险库</span></a></li>
+							<li><a href="../risk/risk_control.html"><i class="icon-eye8"></i> <span>风险控制</span></a></li>
+						</ul>
+					</li>
+
+					<li><a href="km_center.html"><i class="icon-folder-open"></i> <span>知识文档</span></a></li>
+
+					<li><a href="#"><i class="icon-chart"></i> <span>统计分析</span></a>
+						<ul>
+							<li><a href="../report/crm_analysis.html"><i class="icon-stats-growth"></i> <span>CRM 绩效分析</span></a></li>
+							<li><a href="../report/proj_analysis.html"><i class="icon-meter-fast"></i> <span>项目绩效分析</span></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /main function navigation -->
+
+		<!-- Options navigation -->
+		<div class="sidebar-category sidebar-category-visible toggle-active">
+			<div class="category-content no-padding">
+				<ul class="navigation navigation-main navigation-accordion">
+					<!-- Main -->
+					<li class="navigation-header"><span>系统设置</span> <i class="icon-menu" title="系统设置"></i></li>
+					<li><a href="#"><i class="icon-cog"></i> <span>用户组织</span></a>
+						<ul>
+							<li><a href="../organization/users.html"><i class="icon-users2"></i> <span>用户管理</span></a></li>
+							<li><a href="../organization/org_structures.html"><i class="icon-tree7"></i> <span>组织结构</span></a></li>
+							<li><a href="../organization/roles.html"><i class="fa fa-group"></i> <span>角色权限</span></a></li>
+							<li><a href="../organization/functions.html"><i class="icon-user-tie"></i> <span>职能岗位</span></a></li>							
+							<li><a href="../organization/parameters.html"><i class="icon-pyramid2"></i> <span>参数管理</span></a></li>
+						</ul>
+					</li>
+					<li class="navigation-header"><span><i class="icon-menu" title=""></i></span><i class="icon-menu" title=""></i></li>
+					<li><a href="#"><i class="icon-switch2"></i> <span>退出系统</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Options navigation -->
+
+	</div>
+</div>
+<!-- /main sidebar -->

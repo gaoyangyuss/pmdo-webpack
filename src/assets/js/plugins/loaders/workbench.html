@@ -1,0 +1,828 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>工作台 - PM.DO 项目管理云</title>
+</head>
+
+<body class="navbar-top sidebar-xs">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top header-highlight">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="../portal/workbench.html"><img src="../src/assets/images/logo_pd.png" alt=""></a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-mobile-secondary-toggle"><i class="icon-more"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-toggle hidden-xs">
+					<i class="icon-paragraph-justify3"></i></a></li>
+
+				<li>
+					<a class="sidebar-control sidebar-secondary-hide hidden-xs">
+						<i class="icon-drag-left"></i>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown dropdown-user">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+						<img src="../src/assets/images/avatars/avatar_14.png" alt="">
+						<span>胖鱼</span>
+						<i class="caret"></i>
+					</a>
+
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a href="#"><i class="icon-profile"></i> 个人设置</a></li>
+						<li><a href="#"><i class="icon-key"></i> 重置密码</a></li>
+						<li class="divider"></li>
+						<li><a href="#"><i class="icon-lock2"></i> 锁屏</a></li>
+						<li><a href="../login/login.html"><i class="icon-switch2"></i> 退出系统</a></li>
+					</ul>
+				</li>
+		
+				<li>
+					<a href="#">
+						<i class="icon-envelop5"></i>
+						<span class="badge badge-info">2</span>
+						<span class="visible-xs-inline-block position-right">站内消息</span>
+					</a>						
+				</li>
+				<li>
+						<a href="#">
+							<i class="icon-stack3"></i>
+							<span class="badge badge-warning">5</span>
+							<span class="visible-xs-inline-block position-right">业务待办</span>
+						</a>						
+				</li>
+				<li>
+						<a href="#">
+							<i class=" icon-clipboard5"></i>
+							<span class="badge badge bg-primary">12</span>
+							<span class="visible-xs-inline-block position-right">计划任务</span>
+						</a>						
+				</li>
+
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main sidebar-fixed">
+				<div class="sidebar-content">
+					<!-- Domain info menu -->
+					<div class="sidebar-user">
+						<div class="category-content">
+							<div class="media">
+								<a href="#" class="media-left"><img src="../src/assets/images/pro_image.png" class="img-circle img-sm" alt=""></a>
+								<div class="media-body media-middle">
+									<!-- 域名称位置，需要限制中文不超过8个，英文字符不超过16个 -->
+									<span class="media-heading text-semibold domain-name-span">深圳普华春天科技</span>
+									<div class="text-size-mini text-muted">
+										<i class="icon-cloud-check2 text-success"></i> &nbsp;专业版&nbsp;&nbsp;
+										<!-- <span class="media-annotation dotted">已认证</span> -->
+									</div>
+								</div>
+								<div class="media-right media-middle">
+									<ul class="icons-list">
+										<li>
+											<a href="#" title="" data-placement="bottom" data-toggle="dropdown" aria-expanded="true" data-container="body" data-original-title="PM.DO 域管理">
+												<i class="icon-cog3"><span class="caret"></i></span>
+											</a>
+											<ul class="dropdown-menu dropdown-menu-right domain—dropdown active ">
+												<li class="active"><a href="../domain_choose/domain_choose.html"><i class="icon-infinite"></i> 深圳普华春天科技</a></li>
+												<li><a href="#"></i> 用户的第二个域</a></li>
+												<li><a href="#"><i class="icon-infinite"></i> One more domain</a></li>
+												<li class="divider"></li>
+												<li><a href="#"><i class="icon-infinite-square"></i> PM.DO 域管理</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /domain info menu -->
+
+					<!-- Main function navigation -->
+					<div class="sidebar-category sidebar-category-visible toggle-active">
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+								<!-- Main -->
+								<li class="navigation-header"><span>功能菜单</span> <i class="icon-menu" title="Main pages"></i></li>
+								<li class="active"><a href="../portal/workbench.html"><i class="icon-home4"></i> <span>工作台</span></a></li>
+								<li>
+									<a href="#"><i class="icon-user"></i> <span>个人中心</span></a>
+									<ul>
+										<li><a href="../personal/calendar.html"><i class="icon-calendar2"></i> <span>日程表</span></a></li>
+										<li><a href="../personal/task.html"><i class="icon-clipboard5"></i> <span>计划任务</span></a></li>
+										<li><a href="../personal/workflows.html"><i class="icon-stack3"></i> <span>业务待办</span></a></li>
+										<li><a href="../personal/messages.html"><i class="icon-envelop5"></i> <span>消息通知</span></a></li>
+										<li><a href="../personal/worknotes.html"><i class="icon-notebook"></i> <span>工作笔记</span></a></li>
+										<li><a href="../personal/scrumboard.html"><i class="icon-windows2"></i> <span>我的看板</span></a></li>
+										<!-- <li><a href="../domain_choose/domain_choose.html"><i class="icon-windows2"></i> <span>我的域</span></a></li> -->
+									</ul>
+								</li>
+								<li><a href="../project/proj_center.html"><i class="icon-grid6"></i> <span>项目管理</span></a></li>
+
+								<li><a href="../operation/team_center.html"><i class="icon-puzzle"></i> <span>专业团队</span></a></li>
+								
+								<li><a href="#"><i class="icon-stats-bars3"></i> <span>CRM</span></a>
+									<ul>
+										<li><a href="../crm/client.html"><i class="icon-office"></i> <span>客户</span></a></li>
+										<li><a href="../crm/contacts.html"><i class="icon-address-book"></i> <span>联系人</span></a></li>
+										<li><a href="../crm/opportunity.html"><i class="icon-cash3"></i> <span>商机</span></a></li>
+										<li><a href="../crm/contracts.html"><i class="icon-drawer3"></i> <span>合同</span></a></li>
+										<li><a href="../crm/services.html"><i class="icon-phone"></i> <span>客户服务</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#"><i class="icon-calculator"></i> <span>成本管理</span></a>
+									<ul>
+										<li><a href="../cost/budgets.html"><i class="icon-coins"></i> <span>预算管理</span></a></li>
+										<li><a href="../cost/cost_monitor.html"><i class="icon-equalizer"></i> <span>成本控制</span></a></li>
+										<!-- 把PD的收支明细和成本控制的功能整合在一起 -->
+									</ul>
+								</li>
+								<li><a href="#"><i class="icon-trophy2"></i> <span>质量管理</span></a>
+									<ul>
+										<li><a href="../quality/qc_inspects.html"><i class="icon-search4"></i> <span>质量检查</span></a></li>
+										<li><a href="../quality/qc_adjusts.html"><i class="icon-file-eye2"></i> <span>整改跟踪</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#"><i class="icon-power2"></i> <span>风险管理</span></a>
+									<ul>
+										<li><a href="../risk/risk_repository.html"><i class="icon-cabinet"></i> <span>企业风险库</span></a></li>
+										<li><a href="../risk/risk_control.html"><i class="icon-eye8"></i> <span>风险控制</span></a></li>
+									</ul>
+								</li>
+
+								<li><a href="../km/km_center.html"><i class="icon-folder-open"></i> <span>知识文档</span></a></li>
+
+								<li><a href="#"><i class="icon-chart"></i> <span>统计分析</span></a>
+									<ul>
+										<li><a href="../report/crm_analysis.html"><i class="icon-stats-growth"></i> <span>CRM 绩效分析</span></a></li>
+										<li><a href="../report/proj_analysis.html"><i class="icon-meter-fast"></i> <span>项目绩效分析</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- /main function navigation -->
+
+					<!-- Options navigation -->
+					<div class="sidebar-category sidebar-category-visible toggle-active">
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+								<!-- Main -->
+								<li class="navigation-header"><span>系统设置</span> <i class="icon-menu" title="系统设置"></i></li>
+								<li><a href="#"><i class="icon-cog"></i> <span>用户组织</span></a>
+									<ul>
+										<li><a href="../organization/users.html"><i class="icon-users2"></i> <span>用户管理</span></a></li>
+										<li><a href="../organization/org_structures.html"><i class="icon-tree7"></i> <span>组织结构</span></a></li>
+										<li><a href="../organization/roles.html"><i class="fa fa-group"></i> <span>角色权限</span></a></li>
+										<li><a href="../organization/functions.html"><i class="icon-user-tie"></i> <span>职能岗位</span></a></li>							
+										<li><a href="../organization/parameters.html"><i class="icon-pyramid2"></i> <span>参数管理</span></a></li>
+									</ul>
+								</li>
+								<li class="navigation-header"><span><i class="icon-menu" title=""></i></span><i class="icon-menu" title=""></i></li>
+								<li><a href="#"><i class="icon-switch2"></i> <span>退出系统</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- /Options navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+				<!-- Page header mini -->
+				<div class="page-header-margin page-header-default page-header-xs border-top-lg border-top-primary has-cover">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h6><i class="icon-home4 position-left"></i><span class="text-semibold">工作台</span></h6>
+						</div>
+
+						<div class="heading-elements">
+							<div class="btn-group">
+								<button type="button" class="btn btn-icon btn-default btn-xs" data-toggle="modal" data-target="#modal_form_vertical"><i class="icon-comment-discussion position-left"></i> 意见反馈</button>
+								<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"><i class="icon-help position-left"></i>	帮助<span class="caret"></span></button>
+									<ul class="dropdown-menu dropdown-menu-right">
+										<li><a href="#"><i class="icon-book3"></i> 功能介绍</a></li>
+										<li class="divider"></li>
+										<li><a href="#"><i class="icon-help"></i> 帮助中心</a></li>
+										<li><a href="#"><i class="fa fa-qq"></i> 官方 QQ 群</a></li>
+										<li><a href="#"><i class="fa fa-wechat"></i> 微信公众号</a></li>
+									</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- /page header mini -->
+
+
+				<!-- Content area -->
+				<div class="content">
+
+				<!-- Dashboard content -->
+					<div class="row">
+						<div class="col-lg-9">
+
+						<!-- Quick stats boxes -->
+						<div class="row">
+							<div class="col-lg-4">
+
+								<!-- Weather -->
+								<div class="panel bg-blue-600 has-bg-image">
+									<div class="panel-body">
+										<div class="heading-elements">
+											<ul class="icons-list">
+												<li><a href="#"><i class="icon-cog3"></i></a></li>
+											</ul>
+										</div>
+									
+										<div class="media no-margin content-group">
+											<div class="media-left media-middle">
+												<span><i class="icon wi-day-sunny icon-3x"></i></span>
+											</div>
+											<div class="media-body">
+												<h3 class="no-margin text-semibold">12 ℃</h3>
+												深圳
+												<div class="no-margin text-muted text-size-small">16 ~ 9℃ 晴</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /weather -->
+
+							</div>
+
+							<div class="col-lg-4">
+	
+								<!-- Time -->
+								<div class="panel bg-teal-400 has-bg-image">
+									<div class="panel-body">
+										<div class="heading-elements">
+										</div>
+										<div class="media no-margin content-group">
+											<div class="media-left media-middle">
+												<span><i class="icon icon-watch2 icon-3x"></i></span>
+											</div>
+											<div class="media-body">
+												<h3 class="no-margin text-semibold">18 : 52</h3>
+												1月15日
+												<div class="no-margin text-muted text-size-small">星期一</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /time -->
+	
+							</div>
+	
+							<div class="col-lg-4">
+	
+								<!-- System pulse -->
+								<div class="panel bg-pink-600 has-bg-image">
+									<div class="panel-body">
+										<div class="heading-elements">
+										</div>
+										<div class="media no-margin content-group">
+											<div class="media-left media-middle">
+												<span><i class="icon icon-pulse2 icon-3x"></i></span>
+											</div>
+											<div class="media-body">
+												<h3 class="no-margin text-semibold">Level 3</h3>
+												您已累计使用本系统 21 天
+												<div class="no-margin text-muted text-size-small">本周活力指数： 95%</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- /system pulse -->
+	
+							</div>
+		
+						</div>
+						<!-- /quick stats boxes -->
+
+						<!--  Dashboard Calendar -->
+						<div class="panel panel-flat panel-calendar panel-collapsed">
+							<div class="panel-heading">
+								<h6 class="panel-title text-semibold"><i class="icon-calendar2"></i> 日程表</h6>
+								<div class="heading-elements">
+									<ul class="icons-list">
+										<li><a data-action="collapse"></a></li>
+										<li><a data-action="reload"></a></li>
+										<li><a data-action="close"></a></li>
+									</ul>
+								</div>
+							</div>
+							
+							<div class="panel-body" style="display: none;">
+								<div class="fullcalendar-background-colors"></div>
+							</div>
+						</div>
+						<!-- /dashboard calendar -->
+
+						<!-- SAS stream heading title -->
+						<div class="row">
+							<div class="col-md-12">
+								<h6 class="content-group text-semibold" style="margin-left:12px;">
+									<i class="icon-stack-text"></i> 工作动态
+									<small class="display-block">来自各个功能模块的工作动态与评论回复都汇集于此...</small>
+								</h6>
+								<div class="heading-elements">
+									<button type="button" class="btn bg-grey dropdown-toggle" data-toggle="dropdown">全部 <span class="caret"></span></button>
+									<ul class="dropdown-menu dropdown-menu-right">
+										<li><a href="#"><i class="icon-menu7"></i> 全部</a></li>
+										<li class="divider"></li>
+										<li><a href="#"><i class="icon-bubbles5"></i> 消息</a></li>
+										<li><a href="#"><i class="icon-megaphone"></i> 公告</a></li>
+										<li><a href="#"><i class="icon-trophy2"></i> 赞扬</a></li>
+										<li><a href="#"><i class="icon-office"></i> 客户</a></li>
+										<li><a href="#"><i class="icon-drawer3"></i> 合同</a></li>
+										<li><a href="#"><i class="icon-grid6"></i> 项目</a></li>
+										<li><a href="#"><i class="icon-folder-open"></i> 文档</a></li>
+										<li class="divider"></li>
+										<li><a href="#"><i class="icon-star-full2"></i> 收藏夹</a></li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+						<!-- SAS stream heading title -->
+
+						
+						<!-- SAS inputs -->
+						<div class="row">
+							<div class="col-md-12">
+								<div class="panel panel-flat publisher-panel">
+									<div class="panel-body">
+										<div class="tabbable">
+											<ul class="nav nav-tabs nav-tabs-bottom">
+												<li class="active"><a href="#left-icon-tab1" data-toggle="tab"><i class="icon-bubbles5 position-left"></i> 消息</a></li>
+												<li><a href="#left-icon-tab2" data-toggle="tab"><i class="icon-megaphone position-left"></i> 公告</a></li>
+												<li><a href="#left-icon-tab3" data-toggle="tab"><i class="icon-thumbs-up3 position-left"></i> 赞扬</a></li>
+											</ul>
+											<div class="tab-content">
+												<div class="tab-pane active" id="left-icon-tab1">
+													<div class="col-md-12 publisher">
+														<div class="pre"></div>
+														<textarea type="text" class="form-control" style="border: none; resize: none;" placeholder="跟大家说点儿什么… @提及他人，按 Ctrl+Enter 快速发布" rows="1"></textarea>
+														<ul class="announce-imgs">   	
+														</ul>
+														<div style="clear: both;"></div>
+														<button type="button" class="btn btn-link broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-smile-o trigger"></i></button>
+														<button type="button" class="btn btn-link btn-file broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-file-image-o"></i>
+														<input type="file" class="file-input"></button>
+														<button type="button" class="btn btn-link broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-at"></i></button>
+														<button type="button" class="btn btn-default btn-xs right-btn cancel"></i> 取消</button>
+														<button type="button" class="btn btn-primary btn-xs right-btn announce" style="margin-right: 10px;"></i> 发表</button>
+													</div>
+												</div>
+
+												<div class="tab-pane" id="left-icon-tab2">
+													<div class="col-md-12 publisher">
+														<div class="pre"></div>
+														<textarea type="text" class="form-control" style="border: none; resize: none; background-color: #eefeda;" placeholder="跟大家说点儿什么… @提及他人，按 Ctrl+Enter 快速发布" rows="1"></textarea>
+														<ul class="announce-imgs">   	
+														</ul>
+														<div style="clear: both;"></div>
+														<button type="button" class="btn btn-link broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-smile-o trigger"></i></button>
+														<button type="button" class="btn btn-link btn-file broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-file-image-o"></i>
+														<input type="file" class="file-input"></button>
+														<button type="button" class="btn btn-link broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-at"></i></button>
+														<button type="button" class="btn btn-default btn-xs right-btn cancel"></i> 取消</button>
+														<button type="button" class="btn btn-primary btn-xs right-btn announce" style="margin-right: 10px;"></i> 发表</button>
+													</div>
+												</div>
+
+												<div class="tab-pane" id="left-icon-tab3">
+													<div class="col-md-12 publisher">
+														<div class="pre"></div>
+														<textarea type="text" class="form-control" style="border: none; resize: none; background-color: #fedada;" placeholder="跟大家说点儿什么… @提及他人，按 Ctrl+Enter 快速发布" rows="1"></textarea>
+														<ul class="announce-imgs">   	
+														</ul>
+														<div style="clear: both;"></div>
+														<button type="button" class="btn btn-link broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-smile-o trigger"></i></button>
+														<button type="button" class="btn btn-link btn-file broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-file-image-o"></i>
+														<input type="file" class="file-input"></button>
+														<button type="button" class="btn btn-link broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-at"></i></button>
+														<button type="button" class="btn btn-default btn-xs right-btn cancel"></i> 取消</button>
+														<button type="button" class="btn btn-primary btn-xs right-btn announce" style="margin-right: 10px;"></i> 发表</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /sas inputs -->
+
+						<!-- SAS stream -->
+						<div class="panel panel-flat notice">
+							<div class="panel-body">
+								<ul class="media-list content-group-lg stack-media-on-mobile">
+
+									<li class="broad-media media">
+										<div class="media-left">
+											<button type="button" class="btn bg-success btn-icon btn-rounded"><i class="icon-megaphone"></i></button>
+										</div>
+
+										<div class="media-body">
+											<div class="media-heading">
+												<span class="name-semibold"><span class="label label-default label-icon">杜</span> 臻</span>
+												<span class="media-annotation dotted"><i class="icon-office"></i> 客户：中国移动</span>
+												<button type="button" class="btn btn-xs btn-mark btn-success">标记为已读</button>
+											</div>
+
+											<p class="result">Savings her pleased are several started females met. Short her not among being any. Thing of judge fruit charm views do. Miles mr an forty along as he.
+											</p>
+
+											<ul class="list-inline list-inline-separate text-size-small list-time">
+												<li>2017-06-07 15:58:39</li>
+											</ul>
+
+											<ul class="list-inline list-inline-separate text-size-small list-operation">
+												<li><a class="agree-btn"><i class="fa fa-heart-o"></i> (<span class="number">0</span>)</a></li>
+												<li><a class="comment-btn"><i class="fa fa-comment-o"></i> 评论 (<span>0</span>)</a></a></li>
+												<li><a class="edit-broad-btn" data-toggle="modal" data-target="#edit_broad_modal"><i class="fa fa-edit"></i> 编辑</a></li>
+												<li><a class="delete-broad-btn"><i class="fa fa-trash"></i> 删除</a></li>	
+											</ul>
+
+											<div style="clear: both;"></div>
+
+											<div class="comment publisher">
+												<textarea type="text" class="form-control" rows="1" style="resize:none;"></textarea>
+												<ul class="announce-imgs">   	
+												</ul>
+												<div style="clear: both;"></div>
+												<button type="button" class="btn btn-link broad-btn left-btn"><i class="fa fa-smile-o trigger"></i></button>
+												<button type="button" class="btn btn-link btn-file broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-file-image-o"></i><input type="file" class="file-input"></button>
+												<button type="button" class="btn btn-link broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-at"></i></button>
+												<button type="button" class="btn btn-default btn-xs right-btn cancel-child"></i> 取消</button>
+												<button type="button" class="btn btn-primary btn-xs right-btn announce-child" style="margin-right: 10px;"></i> 发表</button>
+												<div style="clear: both;"></div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /sas stream -->
+
+						<!-- SAS stream -->
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<ul class="media-list content-group-lg stack-media-on-mobile">
+
+									<li class="broad-media media">
+										<div class="media-left">
+											<button type="button" class="btn bg-primary btn-icon btn-rounded"><i class="icon-bubbles5"></i></button>
+										</div>
+
+										<div class="media-body">
+											<div class="media-heading">
+												<span class="name-semibold"><span class="label label-default label-icon">杜</span> 臻</span>
+												<span class="media-annotation dotted"><i class="icon-office"></i> 客户：中国移动</span>
+											</div>
+
+											<p class="result">Savings her pleased are several started females met. Short her not among being any. Thing of judge fruit charm views do. Miles mr an forty along as he.
+											</p>
+
+											<div class="tm-m-photos">
+											  	<ul class="tm-m-photos-thumb">
+											    	<li data-src="../src/assets/commentImg/img/1.jpg"> <img src="../src/assets/commentImg/img/1.jpg"> <b class="tm-photos-arrow"></b> </li>
+											    	<li data-src="../src/assets/commentImg/img/2.jpg"> <img src="../src/assets/commentImg/img/2.jpg"> <b class="tm-photos-arrow"></b> </li>
+											    	<li data-src="../src/assets/commentImg/img/3.jpg"> <img src="../src/assets/commentImg/img/3.jpg"> <b class="tm-photos-arrow"></b> </li>
+											    	<li data-src="../src/assets/commentImg/img/4.jpg"> <img src="../src/assets/commentImg/img/4.jpg"> <b class="tm-photos-arrow"></b> </li>
+											  	</ul>
+											  	<div class="tm-m-photo-viewer"> 
+												  	<img src="../src/assets/commentImg/img/1.jpg"> 
+													<a class="tm-m-photo-viewer-navleft"><i></i></a> 
+													<a class="tm-m-photo-viewer-navright"><i></i></a> 
+												</div>
+											</div>
+
+											<ul class="list-inline list-inline-separate text-size-small list-time">
+												<li>2017-06-07 15:58:39</li>
+											</ul>
+
+											<ul class="list-inline list-inline-separate text-size-small list-operation">
+												<li><a class="agree-btn"><i class="fa fa-heart-o"></i> (<span class="number">0</span>)</a></li>
+												<li><a class="comment-btn"><i class="fa fa-comment-o"></i> 评论 (<span>0</span>)</a></a></li>
+												<li><a class="edit-broad-btn" data-toggle="modal" data-target="#edit_broad_modal"><i class="fa fa-edit"></i> 编辑</a></li>
+												<li><a class="delete-broad-btn"><i class="fa fa-trash"></i> 删除</a></li>	
+											</ul>
+
+											<div style="clear: both;"></div>
+
+											<div class="comment publisher">
+												<textarea type="text" class="form-control" rows="1" style="resize:none;"></textarea>
+												<ul class="announce-imgs">   	
+												</ul>
+												<div style="clear: both;"></div>
+												<button type="button" class="btn btn-link broad-btn left-btn"><i class="fa fa-smile-o trigger"></i></button>
+												<button type="button" class="btn btn-link btn-file broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-file-image-o"></i>
+												<input type="file" class="file-input"></button>
+												<button type="button" class="btn btn-link broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-at"></i></button>
+												<button type="button" class="btn btn-default btn-xs right-btn cancel-child"></i> 取消</button>
+												<button type="button" class="btn btn-primary btn-xs right-btn announce-child" style="margin-right: 10px;"></i> 发表</button>
+												<div style="clear: both;"></div>
+											</div>
+
+											<div class="reply-media media">
+												<div class="media-left">
+													<button type="button" class="btn bg-primary btn-icon btn-rounded btn-bubbles5"><i class="icon-bubbles5"></i></button>
+												</div>
+												<div class="media-body">
+													<div class="media-heading">
+														<span class="name-semibold"><span class="label label-default label-icon">小</span> 明</span>
+													</div>
+													<p>She education get middleton day agreement performed preserved unwilling. Do however as pleased offence outward beloved by present. By outward neither he so covered.</p>
+													<ul class="list-inline list-inline-separate text-size-small list-time">
+														<li>2017-06-07 15:58:39</li>
+													</ul>
+
+													<ul class="list-inline list-inline-separate text-size-small list-operation">
+														<li><a class="agree-btn"><i class="fa fa-heart-o"></i> (<span class="number">0</span>)</a></li>
+														<li><a class="reply-btn"><i class="fa fa-mail-reply"></i> 回复</a></li>
+														<li><a class="edit-broad-btn" data-toggle="modal" data-target="#edit_broad_modal"><i class="fa fa-edit"></i> 编辑</a></li>
+														<li><a class="delete-reply-btn"><i class="fa fa-trash"></i> 删除</a></li>	
+													</ul>
+
+													<div style="clear: both;"></div>
+
+													<div class="reply publisher">
+														<textarea type="text" class="form-control" rows="1" style="resize:none;"></textarea>
+														<ul class="announce-imgs">   	
+														</ul>
+														<div style="clear: both;"></div>
+														<button type="button" class="btn btn-link broad-btn left-btn"><i class="fa fa-smile-o trigger"></i></button>
+														<button type="button" class="btn btn-link btn-file broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-file-image-o"></i><input type="file" class="file-input"></button>
+														<button type="button" class="btn btn-link broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-at"></i></button>
+														<button type="button" class="btn btn-default btn-xs right-btn cancel-child"></i> 取消</button>
+														<button type="button" class="btn btn-primary btn-xs right-btn announce-child" style="margin-right: 10px;"></i> 发表</button>
+													</div>
+												</div>
+											</div>
+
+											<div class="reply-media media">
+												<div class="media-left">
+													<button type="button" class="btn bg-primary btn-icon btn-rounded btn-bubbles5"><i class="icon-bubbles5"></i></button>
+												</div>
+												<div class="media-body">
+													<div class="media-heading">
+														<span class="name-semibold"><span class="label label-default label-icon">杜</span> 臻</span>
+														<span class="media-annotation dotted">回复@小明</span>
+													</div>
+													<p>She education get middleton day agreement performed preserved unwilling. Do however as pleased offence outward beloved by present. By outward neither he so covered.</p>
+													<ul class="list-inline list-inline-separate text-size-small list-time">
+														<li>2017-06-07 15:58:39</li>
+													</ul>
+
+													<ul class="list-inline list-inline-separate text-size-small list-operation">
+														<li><a class="agree-btn"><i class="fa fa-heart-o"></i> (<span class="number">0</span>)</a></li>
+														<li><a class="reply-btn"><i class="fa fa-mail-reply"></i> 回复</a></li>
+														<li><a class="edit-broad-btn" data-toggle="modal" data-target="#edit_broad_modal"><i class="fa fa-edit"></i> 编辑</a></li>
+														<li><a class="delete-reply-btn"><i class="fa fa-trash"></i> 删除</a></li>	
+													</ul>
+
+													<div style="clear: both;"></div>
+													<div class="reply publisher">
+														<textarea type="text" class="form-control" rows="1" style="resize:none;"></textarea>
+														<ul class="announce-imgs">   	
+														</ul>
+														<div style="clear: both;"></div>
+														<button type="button" class="btn btn-link broad-btn left-btn"><i class="fa fa-smile-o trigger"></i></button>
+														<button type="button" class="btn btn-link btn-file broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-file-image-o"></i><input type="file" class="file-input"></button>
+														<button type="button" class="btn btn-link broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-at"></i></button>
+														<button type="button" class="btn btn-default btn-xs right-btn cancel-child"></i> 取消</button>
+														<button type="button" class="btn btn-primary btn-xs right-btn announce-child" style="margin-right: 10px;"></i> 发表</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /sas stream -->
+
+						<!-- SAS stream -->
+						<div class="panel panel-flat praise">
+							<div class="panel-body">
+								<ul class="media-list content-group-lg stack-media-on-mobile">
+
+									<li class="broad-media media">
+										<div class="media-left">
+											<button type="button" class="btn bg-danger btn-icon btn-rounded"><i class="icon-thumbs-up3"></i></button>
+										</div>
+
+										<div class="media-body">
+											<div class="media-heading">
+												<span class="name-semibold"><span class="label label-default label-icon">杜</span> 臻</span>
+												<span class="media-annotation dotted"><i class="icon-office"></i> 客户：中国移动</span>
+											</div>
+
+											<p class="result">Savings her pleased are several started females met. Short her not among being any. Thing of judge fruit charm views do. Miles mr an forty along as he.
+											</p>
+
+											<ul class="list-inline list-inline-separate text-size-small list-time">
+												<li>2017-06-07 15:58:39</li>
+											</ul>
+
+											<ul class="list-inline list-inline-separate text-size-small list-operation">
+												<li><a class="agree-btn"><i class="fa fa-heart-o"></i> (<span class="number">0</span>)</a></li>
+												<li><a class="comment-btn"><i class="fa fa-comment-o"></i> 评论 (<span>0</span>)</a></a></li>
+												<li><a class="edit-broad-btn" data-toggle="modal" data-target="#edit_broad_modal"><i class="fa fa-edit"></i> 编辑</a></li>
+												<li><a class="delete-broad-btn"><i class="fa fa-trash"></i> 删除</a></li>	
+											</ul>
+
+											<div style="clear: both;"></div>
+
+											<div class="comment publisher">
+												<textarea type="text" class="form-control" rows="1" style="resize:none;"></textarea>
+												<ul class="announce-imgs">   	
+												</ul>
+												<div style="clear: both;"></div>
+												<button type="button" class="btn btn-link broad-btn left-btn"><i class="fa fa-smile-o trigger"></i></button>
+												<button type="button" class="btn btn-link btn-file broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-file-image-o"></i><input type="file" class="file-input"></button>
+												<button type="button" class="btn btn-link broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-at"></i></button>
+												<button type="button" class="btn btn-default btn-xs right-btn cancel-child"></i> 取消</button>
+												<button type="button" class="btn btn-primary btn-xs right-btn announce-child" style="margin-right: 10px;"></i> 发表</button>
+												<div style="clear: both;"></div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /sas stream -->
+
+						<button type="button" class="btn btn-default btn-xs" style="width: 100%; margin-bottom: 10px;">加载更多</button>
+						
+					</div>
+		
+					<div class="col-lg-3">
+									
+						<!-- Todo widget -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h6 class="panel-title text-semibold"> 工作事项</h6>
+							</div>
+
+							<div class="list-group no-border no-padding-top">
+								<div class="list-group-divider no-margin-top"></div>
+								<a href="#" class="list-group-item"><i class="icon-calendar2"></i><span class="badge bg-violet pull-right">3</span> 日历事项</a>
+								<a href="#" class="list-group-item"><i class="icon-clipboard5"></i><span class="badge bg-primary pull-right">12</span> 计划任务</a>
+								<a href="#" class="list-group-item"><i class="icon-stack3"></i><span class="badge bg-warning pull-right">5</span> 业务待办</a>
+								<div class="list-group-divider"></div>
+								<a href="#" class="list-group-item"><i class="icon-envelop5"></i> <span class="badge bg-info pull-right">2</span> 新消息</a>
+								<a href="#" class="list-group-item"><i class="icon-bubble-lines3"></i><span class="badge bg-teal  pull-right">29</span>新评论</a>
+							</div>
+						</div>
+						<!-- /todo widget -->
+
+			
+						<!-- Quick launch -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h6 class="panel-title text-semibold">快捷处理...</h6>
+								<div class="heading-elements">
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-xs-4">
+										<button class="btn bg-teal-400 btn-block btn-float btn-float-lg" type="button"><i class="icon-compose"></i> <span>写日报</span></button>
+										<button class="btn bg-purple-300 btn-block btn-float btn-float-lg" type="button"><i class="icon-office"></i> <span>新建客户</span></button>
+									</div>
+									
+									<div class="col-xs-4">
+										<button class="btn bg-warning-400 btn-block btn-float btn-float-lg" type="button"><i class="icon-notebook"></i> <span>记笔记</span></button>
+										<button class="btn bg-brown-400 btn-block btn-float btn-float-lg" type="button"><i class="icon-address-book2"></i> <span>新建联系人</span></button>
+									</div>
+
+									<div class="col-xs-4">
+										<button class="btn bg-primary-400 btn-block btn-float btn-float-lg" type="button"><i class="fa fa-tasks"></i> <span>新建项目</span></button>
+										<button class="btn bg-indigo-400 btn-block btn-float btn-float-lg" type="button"><i class="icon-file-upload2"></i> <span>上传文件</span></button>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- /quick launch -->
+	
+						<!-- Seamless button group -->
+						<div class="content-group">
+								<div class="row row-seamless btn-block-group">
+									<div class="col-xs-4">
+										<button type="button" class="btn btn-default btn-block btn-float btn-float-lg">
+											<i class="icon-user-plus text-blue-600"></i>
+											<span>邀请用户</span>
+										</button>
+
+									</div>
+
+									<div class="col-xs-4">
+										<button type="button" class="btn btn-default btn-block btn-float btn-float-lg">
+											<i class="fa fa-qq text-black"></i>
+											<span>用户QQ群</span>
+										</button>
+
+									</div>
+
+									<div class="col-xs-4">
+										<button type="button" class="btn btn-default btn-block btn-float btn-float-lg">
+											<i class="fa fa-wechat text-green"></i>
+											<span>微信公众号</span>
+										</button>
+
+									</div>
+								</div>
+						</div>
+						<!-- /seamless button group -->
+							
+						</div>
+					</div>
+					<!-- /dashboard content -->
+
+					<!-- Footer -->
+					<!-- <div class="footer text-muted">
+						&copy; 2015 - 2018. <a href="https://www.pmdo.cn"> PM.DO 项目管理云 - R2018</a> - 粤ICP备15074615号 - 深圳云维度科技有限公司 版权所有。
+					</div> -->
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+	<!-- edit_broad_modal -->
+	<div id="edit_broad_modal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal">&times;</button>
+	<h6 class="modal-title text-semibold">编辑</h6>
+</div>
+<div class="modal-body">
+	<div class="publisher">
+		<div class="pre"></div>
+		<textarea type="text" class="form-control" style="border: none; resize: none;" placeholder="跟大家说点儿什么… @提及他人，按 Ctrl+Enter 快速发布"></textarea>
+		<ul class="announce-imgs">   	
+		</ul>
+		<div style="clear: both;"></div>
+		<button type="button" class="btn btn-link broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-smile-o trigger"></i></button>
+		<button type="button" class="btn btn-link btn-file broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-file-image-o"></i>
+		<input type="file" class="file-input"></button>
+		<button type="button" class="btn btn-link broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-at"></i></button>
+		<button type="button" class="btn btn-default btn-xs right-btn cancel" data-dismiss="modal"></i> 取消</button>
+		<button type="button" class="btn btn-primary btn-xs right-btn announce" style="margin-right: 10px;"></i> 发表</button>
+		<div style="clear: both;"></div>
+	</div>
+</div>
+<!-- <div class="modal-footer">
+	<button type="button" class="btn btn-primary">确定</button>
+	<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+</div> -->
+				
+
+			</div>
+		</div>
+	</div>
+	<!-- /edit_broad_modal -->
+
+</body>
+</html>

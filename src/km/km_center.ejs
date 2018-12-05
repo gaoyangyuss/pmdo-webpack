@@ -1,0 +1,258 @@
+<!-- Secondary sidebar -->
+<div class="sidebar sidebar-secondary sidebar-default sidebar-fixed">
+	<div class="sidebar-content">
+
+		<!-- Sidebar tabs -->
+		<div class="tabbable sortable">
+
+			<div class="tab-content">
+
+				<div class="tab-pane active no-padding" id="left_second-tab">
+					<div class="sidebar-category">
+						<div class="category-title">
+							<span>文档管理器</span>
+						</div>
+
+						<div class="category-content text-center" style="margin-top: 10px;">
+							<div class="row">
+								<div class="col-xs-4">
+									<button type="button" class="btn btn-xs btn-icon btn-success btn-block dropdown-toggle"  data-toggle="dropdown" aria-expanded="false"><i class="icon-folder-plus position-left"></i>新增</i></button>
+									<ul class="dropdown-menu dropdown-menu-left">
+										<li class="km-tree-add-btn"><a>新建全局文件夹</a></li>
+										<li class="km-tree-add-btn"><a>新建私有文件夹</a></li>
+									</ul>
+								</div>
+								<div class="col-xs-4"><button type="button" class="btn btn-xs btn-icon bg-blue btn-block km-tree-add-btn"><i class="icon-pencil3 position-left"></i>编辑</button></div>
+								<div class="col-xs-4"><button type="button" class="btn btn-xs btn-icon bg-grey btn-block"><i class="icon-folder-remove position-left"></i>删除</button></div>
+							</div>
+						</div>
+
+						<div class="input-group has-feedback has-feedback-left tree-search-group">
+							<input name="search" class="form-control" placeholder="搜索...">
+							<div class="form-control-feedback">
+								<i class="icon-search4 text-size-base text-muted"></i>
+							</div>
+							<span class="input-group-btn">
+								<button id="btnResetSearch" class="btn btn-default btn-icon" type="button"><i class="icon-cross2 "></i></button>
+							</span>
+						</div>
+
+						<div id="km_center_tree" class="category-content tree-default">
+							<!-- <ul>
+								<li class="folder expanded">Expanded folder with children
+									<ul>
+										<li class="expanded">Expanded sub-item
+											<ul>
+												<li class="active focused">Active sub-item (active and focus on init)</li>
+												<li>Basic <i>menu item</i> with <strong class="text-semibold">HTML support</strong></li>
+											</ul>
+										</li>
+										<li>Collapsed sub-item
+											<ul>
+												<li>Sub-item 2.2.1</li>
+												<li>Sub-item 2.2.2</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="has-tooltip" title="Look, a tool tip!">Menu item with key and tooltip</li>
+								<li class="folder">Collapsed folder
+									<ul>
+										<li>Sub-item 1.1</li>
+										<li>Sub-item 1.2</li>
+									</ul>
+								</li>
+								<li class="selected">This is a selected item</li>
+								<li class="expanded">Document with some children (expanded on init)
+									<ul>
+										<li>Document sub-item</li>
+										<li>Document sub-item</li>
+										<li>Document sub-item</li>
+
+										<li>Another document sub-item
+											<ul>
+												<li>Sub-item 2.1.1</li>
+												<li>Sub-item 2.1.2</li>
+											</ul>
+										</li>
+									</ul>
+								</li>	
+							</ul> -->
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- /sidebar tabs -->
+
+	</div>
+</div>
+<!-- /secondary sidebar -->
+
+<!-- Main content -->
+<div class="content-wrapper">
+
+	<!-- Page header mini -->
+	<div class="page-header-margin page-header-default page-header-xs border-top-lg border-top-primary has-cover">
+		<div class="page-header-content">
+			<div class="page-title">
+				<h6><i class="icon-folder-open position-left"></i><span class="text-semibold">知识文档</span></h6>
+			</div>
+
+			<div class="heading-elements">
+				<div class="btn-group">
+					<button type="button" class="btn btn-icon btn-success btn-xs"><i class="icon-upload position-left"></i> 上传文档</button>
+				</div>
+				<ul class="icons-list">
+					<li><a href="#" data-popup="tooltip" title="查看帮助" data-placement="bottom"><i class="icon-help"></i></a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	<!-- /page header mini -->
+
+	<!-- Content area -->
+	<div class="content">
+
+		<!-- Header offset -->
+		<div class="panel panel-flat">
+			
+			<div class="panel-body table-panel-body">
+				<div class="btn-group">
+					<button type="button" class="btn btn-icon btn-default btn-sm" data-popup="tooltip" title="移动到..." data-placement="bottom" data-container="body"><i class="icon-move"></i></button>
+					<button type="button" class="btn btn-icon btn-default btn-sm" data-popup="tooltip" title="下载到..." data-placement="bottom" data-container="body"><i class="icon-download7"></i></button>
+					<button type="button" class="btn btn-icon btn-default btn-sm" data-popup="tooltip" title="删除" data-placement="bottom" data-container="body"><i class="icon-trash"></i></button>
+				</div>
+				<div class="btn-group">
+					<button type="button" class="btn btn-icon btn-default btn-sm dropdown-toggle colvis-btn" data-toggle="dropdown" data-popup="tooltip" title="设置显示列" data-placement="bottom" data-container="body"><i class="icon-table2"></i></button>
+					<ul class="dropdown-menu dropdown-menu-right colvis-menu">
+						<li id="0" class="active"><a href="#">复选框</a></li>
+						<li id="1" class="active"><a href="#">文档名称</a></li>
+						<li id="2" class="active"><a href="#">类型</a></li>
+						<li id="3" class="active"><a href="#">大小</a></li>
+						<li id="4" class="active"><a href="#">版本</a></li>
+						<li id="5" class="active"><a href="#">最近更新时间</a></li>
+						<li id="6" class="active"><a href="#">管理</a></li>
+					</ul>
+				</div>
+
+				<div class="input-group input-group-sm" style= "width:280px; margin-bottom:0px; float:right">
+					<input type="text" class="form-control" placeholder="请输入文档名称中的关键字...">
+					<div class="input-group-btn">
+						<button type="button" class="btn btn-default"><i class="icon-search4"></i></button>
+						<button type="button" class="btn bg-slate-700 btn-icon" data-toggle="collapse" data-target="#adv-search">
+							<span class="caret"></span>
+						</button>
+					</div>
+				</div>
+				<div class="collapse" id="adv-search">
+					<form class="form-horizontal" action="#">
+						<hr style="margin-top:10px; margin-bottom:15px;">
+						<div style="margin-bottom:5px;">
+							<label class="control-label text-semibold text-left">高级搜索：</label>
+							<span class="text-success-600"><i class="icon-plus-circle2"></i> 添加搜索条件</span>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-10">
+								<div class="col-md-3">
+									<select class="select" style="width: 100%;">
+										<option>文档名称</option>
+										<option>类型</option>
+										<option>大小</option>
+										<option>版本</option>
+									</select>
+								</div>
+								<div class="col-md-2">
+									<select class="select" style="width: 100%;">
+										<option>等于</option>
+										<option>不等于</option>
+									</select>
+								</div>
+								<div class="col-md-4">
+									<input type="text" class="form-control" placeholder="">
+								</div>
+								<div class="col-md-2">
+									<button type="button" class="btn btn-xs btn-icon btn-rounded"><i class="icon-cancel-circle2"></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-10">
+								<div class="col-md-3">
+									<select class="select" disabled="" style="width: 100%;">
+										<option>时间范围</option>
+									</select>
+								</div>
+								<div class="col-md-6">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="icon-calendar22"></i></span>
+										<input type="text" class="form-control daterange-basic" value="01/01/2015 - 01/31/2015"> 
+									</div>
+								</div>
+								<div class="col-md-2">
+									<button type="button" class="btn btn-xs btn-icon btn-rounded"><i class="icon-cancel-circle2"></i></button>
+								</div>
+							</div>
+						</div>
+					</form>
+					<button type="button" class="btn btn-icon bg-primary btn-xs adv-search-btn"><i class="icon-search4 position-left"></i> 搜 索 </button>
+
+				</div>
+
+			</div>
+
+			<table id="km_center_table" class="table table-striped table-hover display nowrap km_center_table" style="width: 100%">
+				<thead>
+					<tr>
+						<th>
+							<input type="checkbox" id="checkAll" class="styled">
+						</th>
+						<th>文档名称</th>
+						<th>类型</th>
+						<th>大小</th>
+						<th>版本</th>
+						<th>最近更新</th>
+						<th>管理</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- <tr class="km-center-detail-btn">
+						<td>
+							<input type="checkbox" name="checkList" class="styled">
+						</td>
+						<td>陕西移动2018年综合业务机房动环监控一期项目合同</td>
+						<td>.doc</td>
+						<td>1.36 MB</td>
+						<td>V 2.1</td>
+						<td>2017-10-11 17:27:32</td>
+						<td>
+							<ul class="icons-list">
+								<li data-popup="tooltip" title="预览" data-container="body"><a href="#"><i class="icon-file-eye2 text-primary-700"></i></a></li>
+								<li data-popup="tooltip" title="下载" data-container="body"><a href="#"><i class="icon-file-download2 text-purple"></i></a></li>
+							</ul>
+						</td>
+					</tr> -->
+				</tbody>
+			</table>
+		</div>
+		<!-- /header offset -->
+
+	</div>
+	<!-- /content area -->
+
+</div>
+<!-- /main content -->
+
+<!-- km_center_detail_modal -->
+<div id="km_center_detail_modal" class="modal fade"></div>
+<!-- /km_center_detail_modal -->
+
+<!-- km_tree_add_modal -->
+<div id="km_tree_add_modal" class="modal fade"></div>
+<!-- /km_tree_add_modal -->
+
+<!-- edit_broad_modal -->
+<div id="edit_broad_modal" class="modal fade"></div>
+<!-- /edit_broad_modal -->

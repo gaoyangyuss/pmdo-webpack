@@ -1,0 +1,95 @@
+<!-- Secondary sidebar -->
+<div class="sidebar sidebar-secondary sidebar-default sidebar-fixed">
+    <div class="sidebar-content">
+
+        <!-- Sidebar tabs -->
+        <div class="tabbable sortable">
+            <div class="tab-content">
+                <div class="tab-pane active no-padding">
+                    <div class="sidebar-category">
+                        <div class="category-content no-padding">
+                            <div class="category-title">
+                                <span>日程查看器</span>
+                            </div>
+                            <div class="padding-10">
+                                <select class="select" style="width: 100%;">
+                                    <option>请选择</option>
+                                </select>
+                                <div class="table-wrap">
+                                    <table id="persons_table" class="table table-hover no-border">
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category-content no-padding">
+                            <div class="category-title">
+                                <span>常用事件</span>
+                            </div>
+                            <div id="external-events">
+                                <div class="fc-events-container content-group">
+                                    <ul class="navigation navigation-alt navigation-accordion marklist">
+                                    </ul>
+                                </div>
+                                <ul class="nav navigation navigation-alt navigation-accordion" style="padding-left: 12px;">
+                                    <li>
+                                        <a href="#" class="calendar-event-add-btn"><span class="text-success-600"><i class="icon-add-to-list"></i> 添加常用事件</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /sidebar tabs -->
+
+    </div>
+</div>
+<!-- /secondary sidebar -->
+
+<!-- Main content -->
+<div class="content-wrapper">
+
+    <!-- Page header mini -->
+    <div class="page-header-margin page-header-default page-header-xs border-top-lg border-top-primary has-cover">
+        <div class="page-header-content">
+            <div class="page-title">
+                <h6><i class="icon-calendar2 position-left"></i><span class="text-semibold">日程表</span></h6>
+            </div>
+            <div class="heading-elements">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-icon btn-success btn-xs calendar-add-btn"><i class="icon-plus22 position-left"></i> 新建日程</button>
+                </div>
+                <ul class="icons-list">
+                    <li><a href="#" data-popup="tooltip" title="查看帮助" data-placement="bottom" data-container="body"><i class="icon-help"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- /page header mini -->
+
+    <!-- Content area -->
+    <div class="content">
+
+        <div class="panel panel-flat">
+            <div class="panel-body">
+                <div class="fullcalendar-external"></div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /content area -->
+
+</div>
+<!-- /main content -->
+
+<!-- calendar_event_add_modal -->
+<div id="calendar_event_add_modal" class="modal fade"></div>
+<!-- /calendar_event_add_modal -->
+
+<!-- calendar_add_modal -->
+<div id="calendar_add_modal" class="modal fade"></div>
+<!-- /calendar_add_modal -->

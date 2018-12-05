@@ -1,0 +1,59 @@
+.table-wrap {
+    margin-top: 10px;
+}
+
+.table-wrap .table > tbody > tr > td {
+    border-top: 0px;
+    border-bottom: 0px;
+    padding: 5px 5px;
+}
+
+.table-wrap, .fc-events-container {
+    overflow: auto;
+}
+
+.fc-events-container {
+    margin: 10px 10px 0 10px;
+    padding-left: 0px;
+    border: none;
+    background-color: #fff;
+}
+
+.sp-container {
+    z-index: 1200;
+}
+
+.checkbox.checkbox-switchery {
+    margin-bottom: 0px;
+}
+
+.form-horizontal .radio-inline {
+    margin-top: -18px;
+}
+
+#external-events .navigation li > a {
+    color: #fff;
+    padding: 0;
+    min-height: auto;
+}
+
+#external-events .navigation li > a:hover {
+    background-color: transparent;
+}
+
+.marklist .input-group {
+    margin-left: 0;
+}
+
+.fc-event .input-group .form-control, .fc-event .input-group .btn, .fc-event .input-group .btn:hover {
+    color: #fff;
+    height: 20px;
+}
+
+.fc-event .input-group .btn {
+    line-height: 1;
+}
+
+.helper {
+    padding: 5px 10px;
+}

@@ -1,0 +1,67 @@
+<!-- Main navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top header-highlight">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="workbench.html"><img src="<%= require('../assets/images/logo_pd.png') %>" alt=""></a>
+
+		<ul class="nav navbar-nav pull-right visible-xs-block">
+			<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+			<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+			<li><a class="sidebar-mobile-secondary-toggle"><i class="icon-more"></i></a></li>
+		</ul>
+	</div>
+
+	<div class="navbar-collapse collapse" id="navbar-mobile">
+		<ul class="nav navbar-nav">
+			<li><a class="sidebar-control sidebar-main-toggle hidden-xs">
+				<i class="icon-paragraph-justify3"></i></a></li>
+
+			<li>
+				<a class="sidebar-control sidebar-secondary-hide hidden-xs">
+					<i class="icon-drag-left"></i>
+				</a>
+			</li>
+		</ul>
+
+		<ul class="nav navbar-nav navbar-right">
+			<li class="dropdown dropdown-user">
+				<a class="dropdown-toggle" data-toggle="dropdown">
+					<img src="<%= require('../assets/images/avatars/avatar_14.png') %>" alt="">
+					<span>胖鱼</span>
+					<i class="caret"></i>
+				</a>
+
+				<ul class="dropdown-menu dropdown-menu-right">
+					<li><a href="#"><i class="icon-profile"></i> 个人设置</a></li>
+					<li><a href="#"><i class="icon-key"></i> 重置密码</a></li>
+					<li class="divider"></li>
+					<li><a href="#"><i class="icon-lock2"></i> 锁屏</a></li>
+					<li><a href="../login/login.html"><i class="icon-switch2"></i> 退出系统</a></li>
+				</ul>
+			</li>
+	
+			<li>
+				<a href="#">
+					<i class="icon-envelop5"></i>
+					<span class="badge badge-info">2</span>
+					<span class="visible-xs-inline-block position-right">站内消息</span>
+				</a>						
+			</li>
+			<li>
+					<a href="#">
+						<i class="icon-stack3"></i>
+						<span class="badge badge-warning">5</span>
+						<span class="visible-xs-inline-block position-right">业务待办</span>
+					</a>						
+			</li>
+			<li>
+					<a href="#">
+						<i class=" icon-clipboard5"></i>
+						<span class="badge badge bg-primary">12</span>
+						<span class="visible-xs-inline-block position-right">计划任务</span>
+					</a>						
+			</li>
+
+		</ul>
+	</div>
+</div>
+<!-- /main navbar -->

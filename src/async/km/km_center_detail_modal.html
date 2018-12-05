@@ -1,0 +1,359 @@
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h5 class="modal-title text-semibold">知识文档详情</h5>
+        </div>
+        <form action="#" class="form-horizontal">
+            <div class="modal-body">
+                <div class="form-group">
+                    <div class="col-lg-12">
+                        <div class="input-group" style="margin-left:5px; margin-right:5px;">
+                            <span class="input-group-addon bg-info-600"><i class="icon-folder-open"></i></span>
+                            <input type="text" class="form-control text-semibold input-xlg" placeholder="请输入知识文档名称...">
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="tabbable">
+                    <ul class="nav nav-tabs nav-tabs-highlight">
+                        <li class="active"><a href="#basic-info-tab" data-toggle="tab">基本信息</a></li>
+                        <li><a href="#file-version-tab" data-toggle="tab">文档版本<span class="badge badge-success position-right">3</span></a></li>
+                        <!-- <li><a href="#association-object-tab" data-toggle="tab">关联对象<span class="badge badge-success position-right">2</span></a></li> -->
+                    </ul>
+        
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="basic-info-tab">
+                            <form class="form-horizontal" action="#">
+                                <!-- <div class="form-group">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <label class="col-md-2 control-label text-right">文档名： </label>
+                                            <div class="col-md-10">
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+        
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <label class="col-md-4 control-label text-right">创建人： </label>
+                                            <div class="col-md-8">
+                                                <select data-placeholder="请选择创建人..." class="select-search" style="width: 100%">
+                                                    <option></option>
+                                                    <optgroup label="行政部">
+                                                        <option value="AZ">张霞</option>
+                                                        <option value="CO">郭明</option>
+                                                        <option value="ID">刘明杰</option>
+                                                        <option value="WY">孙茜</option>
+                                                    </optgroup>
+                                                    <optgroup label="市场部">
+                                                        <option value="AL">马仙林</option>
+                                                        <option value="IA">陈明</option>
+                                                        <option value="KS">宋晓明</option>
+                                                        <option value="KY">张彩明</option>
+                                                    </optgroup>
+                                                    <optgroup label="开发部">
+                                                        <option value="CT">刘准同</option>
+                                                        <option value="FL">赵红杰</option>
+                                                        <option value="MA">葛明婷</option>
+                                                        <option value="WV">王红艳</option>
+                                                    </optgroup>
+                                                </select>
+                                                <!-- <input type="text" class="form-control" placeholder=""> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <label class="col-md-4 control-label text-right">创建时间：</label>
+                                            <div class="col-md-8">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="icon-calendar22"></i></span>
+                                                    <input type="text" class="form-control daterange-single" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <label class="col-md-4 control-label text-right">文档后缀： </label>
+                                            <div class="col-md-8">
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <label class="col-md-4 control-label text-right">文档大小：</label>
+                                            <div class="col-md-8">
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <label class="col-md-2 control-label text-right">备注： </label>
+                                            <div class="col-md-10">
+                                                <textarea type="text" class="form-control" placeholder=""></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="tabbable">
+                                <ul class="nav nav-tabs nav-tabs-bottom">
+                                    <li class="active"><a href="#task-bottom-tab1" data-toggle="tab">评论</a></li>
+                                </ul>
+        
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="task-bottom-tab1">
+                                        <!-- SAS stream -->
+                                        <div class="panel panel-flat sas-panel">
+                                            <div class="panel-body">
+                                                <ul class="media-list content-group-lg stack-media-on-mobile">
+        
+                                                    <li class="broad-media media">
+                                                        <div class="media-left">
+                                                            <button type="button" class="btn bg-primary btn-icon btn-rounded"><i class="icon-bubbles5"></i></button>
+                                                        </div>
+        
+                                                        <div class="media-body">
+                                                            <div class="media-heading">
+                                                                <span class="name-semibold"><span class="label label-default label-icon">杜</span> 臻</span>
+                                                                <span class="media-annotation dotted"><i class="icon-office"></i> 客户：中国移动</span>
+                                                            </div>
+        
+                                                            <p class="result">Savings her pleased are several started females met. Short her not among being any. Thing of judge fruit charm views do. Miles mr an forty along as he.
+                                                            </p>
+        
+                                                            <div class="tm-m-photos">
+                                                                    <ul class="tm-m-photos-thumb">
+                                                                    <li data-src="../../assets/commentImg/img/1.jpg"> <img src="../../assets/commentImg/img/1.jpg"> <b class="tm-photos-arrow"></b> </li>
+                                                                    <li data-src="../../assets/commentImg/img/2.jpg"> <img src="../../assets/commentImg/img/2.jpg"> <b class="tm-photos-arrow"></b> </li>
+                                                                    <li data-src="../../assets/commentImg/img/3.jpg"> <img src="../../assets/commentImg/img/3.jpg"> <b class="tm-photos-arrow"></b> </li>
+                                                                    <li data-src="../../assets/commentImg/img/4.jpg"> <img src="../../assets/commentImg/img/4.jpg"> <b class="tm-photos-arrow"></b> </li>
+                                                                    </ul>
+                                                                    <div class="tm-m-photo-viewer"> 
+                                                                        <img src="../../assets/commentImg/img/1.jpg"> 
+                                                                    <a class="tm-m-photo-viewer-navleft"><i></i></a> 
+                                                                    <a class="tm-m-photo-viewer-navright"><i></i></a> 
+                                                                </div>
+                                                            </div>
+        
+                                                            <ul class="list-inline list-inline-separate text-size-small list-time">
+                                                                <li>2017-06-07 15:58:39</li>
+                                                            </ul>
+        
+                                                            <ul class="list-inline list-inline-separate text-size-small list-operation">
+                                                                <li><a class="agree-btn"><i class="fa fa-heart-o"></i> (<span class="number">0</span>)</a></li>
+                                                                <li><a class="comment-btn"><i class="fa fa-comment-o"></i> 评论 (<span>0</span>)</a></a></li>
+                                                                <li><a class="edit-broad-btn"><i class="fa fa-edit"></i> 编辑</a></li>
+                                                                <li><a class="delete-broad-btn"><i class="fa fa-trash"></i> 删除</a></li>	
+                                                            </ul>
+        
+                                                            <div style="clear: both;"></div>
+        
+                                                            <div class="comment publisher">
+                                                                <textarea type="text" class="form-control" rows="1" style="resize:none;"></textarea>
+                                                                <ul class="announce-imgs">   	
+                                                                </ul>
+                                                                <div style="clear: both;"></div>
+                                                                <button type="button" class="btn btn-link broad-btn left-btn"><i class="fa fa-smile-o trigger"></i></button>
+                                                                <button type="button" class="btn btn-link btn-file broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-file-image-o"></i>
+                                                                <input type="file" class="file-input"></button>
+                                                                <button type="button" class="btn btn-link broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-at"></i></button>
+                                                                <button type="button" class="btn btn-default btn-xs right-btn cancel-child"></i> 取消</button>
+                                                                <button type="button" class="btn btn-primary btn-xs right-btn announce-child" style="margin-right: 10px;"></i> 发表</button>
+                                                                <div style="clear: both;"></div>
+                                                            </div>
+        
+                                                            <div class="reply-media media">
+                                                                <div class="media-left">
+                                                                    <button type="button" class="btn bg-primary btn-icon btn-rounded btn-bubbles5"><i class="icon-bubbles5"></i></button>
+                                                                </div>
+                                                                <div class="media-body">
+                                                                    <div class="media-heading">
+                                                                        <span class="name-semibold"><span class="label label-default label-icon">小</span> 明</span>
+                                                                    </div>
+                                                                    <p>She education get middleton day agreement performed preserved unwilling. Do however as pleased offence outward beloved by present. By outward neither he so covered.</p>
+                                                                    <ul class="list-inline list-inline-separate text-size-small list-time">
+                                                                        <li>2017-06-07 15:58:39</li>
+                                                                    </ul>
+        
+                                                                    <ul class="list-inline list-inline-separate text-size-small list-operation">
+                                                                        <li><a class="agree-btn"><i class="fa fa-heart-o"></i> (<span class="number">0</span>)</a></li>
+                                                                        <li><a class="reply-btn"><i class="fa fa-mail-reply"></i> 回复</a></li>
+                                                                        <li><a class="edit-broad-btn"><i class="fa fa-edit"></i> 编辑</a></li>
+                                                                        <li><a class="delete-reply-btn"><i class="fa fa-trash"></i> 删除</a></li>	
+                                                                    </ul>
+        
+                                                                    <div style="clear: both;"></div>
+        
+                                                                    <div class="reply publisher">
+                                                                        <textarea type="text" class="form-control" rows="1" style="resize:none;"></textarea>
+                                                                        <ul class="announce-imgs">   	
+                                                                        </ul>
+                                                                        <div style="clear: both;"></div>
+                                                                        <button type="button" class="btn btn-link broad-btn left-btn"><i class="fa fa-smile-o trigger"></i></button>
+                                                                        <button type="button" class="btn btn-link btn-file broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-file-image-o"></i><input type="file" class="file-input"></button>
+                                                                        <button type="button" class="btn btn-link broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-at"></i></button>
+                                                                        <button type="button" class="btn btn-default btn-xs right-btn cancel-child"></i> 取消</button>
+                                                                        <button type="button" class="btn btn-primary btn-xs right-btn announce-child" style="margin-right: 10px;"></i> 发表</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+        
+                                                            <div class="reply-media media">
+                                                                <div class="media-left">
+                                                                    <button type="button" class="btn bg-primary btn-icon btn-rounded btn-bubbles5"><i class="icon-bubbles5"></i></button>
+                                                                </div>
+                                                                <div class="media-body">
+                                                                    <div class="media-heading">
+                                                                        <span class="name-semibold"><span class="label label-default label-icon">杜</span> 臻</span>
+                                                                        <span class="media-annotation dotted">回复@小明</span>
+                                                                    </div>
+                                                                    <p>She education get middleton day agreement performed preserved unwilling. Do however as pleased offence outward beloved by present. By outward neither he so covered.</p>
+                                                                    <ul class="list-inline list-inline-separate text-size-small list-time">
+                                                                        <li>2017-06-07 15:58:39</li>
+                                                                    </ul>
+        
+                                                                    <ul class="list-inline list-inline-separate text-size-small list-operation">
+                                                                        <li><a class="agree-btn"><i class="fa fa-heart-o"></i> (<span class="number">0</span>)</a></li>
+                                                                        <li><a class="reply-btn"><i class="fa fa-mail-reply"></i> 回复</a></li>
+                                                                        <li><a class="edit-broad-btn"><i class="fa fa-edit"></i> 编辑</a></li>
+                                                                        <li><a class="delete-reply-btn"><i class="fa fa-trash"></i> 删除</a></li>	
+                                                                    </ul>
+        
+                                                                    <div style="clear: both;"></div>
+                                                                    <div class="reply publisher">
+                                                                        <textarea type="text" class="form-control" rows="1" style="resize:none;"></textarea>
+                                                                        <ul class="announce-imgs">   	
+                                                                        </ul>
+                                                                        <div style="clear: both;"></div>
+                                                                        <button type="button" class="btn btn-link broad-btn left-btn"><i class="fa fa-smile-o trigger"></i></button>
+                                                                        <button type="button" class="btn btn-link btn-file broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-file-image-o"></i><input type="file" class="file-input"></button>
+                                                                        <button type="button" class="btn btn-link broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-at"></i></button>
+                                                                        <button type="button" class="btn btn-default btn-xs right-btn cancel-child"></i> 取消</button>
+                                                                        <button type="button" class="btn btn-primary btn-xs right-btn announce-child" style="margin-right: 10px;"></i> 发表</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- /sas stream -->
+                                        <div class="panel panel-flat publisher2-panel">
+                                            <div class="panel-body">
+                                                <div class="publisher">
+                                                    <div class="pre"></div>
+                                                    <textarea type="text" class="form-control" rows="2" placeholder="发布评论... @提及他人，按 Ctrl+Enter 快速发布"></textarea>
+                                                    <ul class="announce-imgs">   	
+                                                    </ul>
+                                                    <div style="clear: both;"></div>
+                                                    <button type="button" class="btn btn-link broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-smile-o trigger"></i></button>
+                                                    <button type="button" class="btn btn-link btn-file broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-file-image-o"></i>
+                                                    <input type="file" class="file-input"></button>
+                                                    <button type="button" class="btn btn-link broad-btn left-btn" style="margin-left: 10px;"><i class="fa fa-at"></i></button>
+                                                    <button type="button" class="btn btn-default btn-xs right-btn cancel"></i> 取消</button>
+                                                    <button type="button" class="btn btn-primary btn-xs right-btn" style="margin-right: 10px;"></i> 发表</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="tab-pane" id="file-version-tab">
+                            <div class="panel-heading" style="padding:5px 10px;">
+                                <p class="text-muted" style="margin-bottom:5px;">
+                                    <i class="icon-info22 position-left"></i> 添加、查看和管理与任务相关的各类支持性文档附件或资料。
+                                </p>
+                                <div class="heading-elements" style="right:10px;">
+                                    <button type="button" class="btn btn-icon btn-success btn-xs"><i class="icon-add-to-list position-left"></i>新增版本</button>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>文件名</th>
+                                            <th>版本号</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>合同编号.txt</td>
+                                            <td>1</td>
+                                            <td>
+                                                <ul class="icons-list">
+                                                    <li data-popup="tooltip" title="预览"><a href="#"><i class="icon-file-eye2 text-primary-700"></i></a></li>
+                                                    <li data-popup="tooltip" title="下载"><a href="#"><i class="icon-file-download2 text-purple"></i></a></li>
+                                                    <li data-popup="tooltip" title="删除"><a href="#"><i class="icon-trash text-danger"></i></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+        
+                        <div class="tab-pane" id="association-object-tab">
+                            <div class="panel-heading" style="padding:5px 10px;">
+                                <p class="text-muted" style="margin-bottom:5px;">
+                                    <i class="icon-info22 position-left"></i> 添加、查看和管理与任务相关的各类支持性文档附件或资料。
+                                </p>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>类型</th>
+                                            <th>对象名称</th>
+                                            <th>创建人</th>
+                                            <th>创建时间</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>文本</td>
+                                            <td>合同编号</td>
+                                            <td>刘志华</td>
+                                            <td>2017-10-11 17：27：32</td>
+                                            <td>
+                                                <ul class="icons-list">
+                                                    <li data-popup="tooltip" title="预览"><a href="#"><i class="icon-file-eye2 text-primary-700"></i></a></li>
+                                                    <li data-popup="tooltip" title="下载"><a href="#"><i class="icon-file-download2 text-purple"></i></a></li>
+                                                    <li data-popup="tooltip" title="删除"><a href="#"><i class="icon-trash text-danger"></i></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-primary">创建</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            </div> -->
+        </form>
+    </div>
+</div>

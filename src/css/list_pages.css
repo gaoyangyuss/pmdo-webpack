@@ -1,0 +1,85 @@
+/*fancytree css*/
+.tree-search-group {
+	margin: 10px;
+}
+.sidebar-category .category-content {
+	padding: 0px 10px 0px 10px;
+}
+ul.fancytree-container {
+	font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 13px;
+}
+.fancytree-plain span.fancytree-active span.fancytree-title, 
+.fancytree-plain span.fancytree-selected span.fancytree-title {
+    background-color: #ddd;
+    border: none;
+}
+.fancytree-plain span.fancytree-node:hover span.fancytree-title {
+	background-color: #29B6F6;
+    border: none;
+    color: #fff;
+}
+.fancytree-ext-filter-dimm tr.fancytree-match span.fancytree-title, 
+.fancytree-ext-filter-dimm span.fancytree-node.fancytree-match span.fancytree-title {
+    color: black;
+    font-weight: bold;
+}
+.fancytree-ext-filter-hide tr.fancytree-hide,
+.fancytree-ext-filter-hide span.fancytree-node.fancytree-hide {
+  	display: none;
+}
+.fancytree-helper-hidden {
+	display: none;
+}
+/*fancytree css*/
+
+/*datatable css*/
+.datatable-footer {
+	padding: 10px 20px 0px 20px;
+}
+.dataTables_info, .dataTables_length, .dataTables_paginate {
+	margin-bottom: 10px;
+}
+/*datatable css*/
+
+/*marklist css*/
+.marklist li a > i {
+	float: right;
+	margin-right: 5px;
+	font-size: 14px;
+	display: none;
+}
+.marklist li a:hover > i {
+	display: inline;
+}
+.marklist .input-group {
+	margin-left: 8px;
+	display: none;
+}
+.marklist .input-group .form-control {
+	border-width: 0px 0px 2px 0px;
+}
+.marklist .input-group .btn,
+.marklist .input-group .btn:hover {
+	border: none;
+	background-color: #fff;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+}
+.son-task-add-list .input-group,
+.mark-add .input-group {
+	margin: 0px 15px;
+	display: none;
+}
+.son-task-add-list .input-group .btn,
+.son-task-add-list .input-group .btn:hover,
+.mark-add .input-group .btn,
+.mark-add .input-group .btn:hover {
+	border: 1px solid #ddd;
+	border-left-width: 0px;
+	background-color: #fff;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+}
+/*marklist css*/
+ 

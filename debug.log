@@ -1,0 +1,3 @@
+[1106/101409.196:ERROR:http_transport_win.cc(273)] WinHttpSendRequest: 操作超时 (0x2ee2)
+[1113/125725.412:ERROR:http_transport_win.cc(273)] WinHttpSendRequest: 无法与服务器建立连接 (0x2efd)
+[1114/130418.150:ERROR:http_transport_win.cc(273)] WinHttpSendRequest: 与服务器的连接意外终止 (0x2efe)
